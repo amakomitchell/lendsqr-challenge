@@ -1,0 +1,36 @@
+
+.company-logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background: rgba(244, 246, 249, 0.5);
+  margin-bottom: 42px;
+}
+
+.company-logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 17.5px;
+  margin-right: 15px;
+  background: #EDF1F5;
+}
+
+.company-name {
+  position: absolute;
+  height: 16.85px;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 14px;
+  color: #545F7D;
+}
+
+.right-icon {
+  height: 12px;
+  opacity: 0.3;
+  margin-left: 15px;
+}
+  

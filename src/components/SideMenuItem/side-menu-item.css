@@ -1,0 +1,21 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.icon {
+  height: 20px;
+}
+
+.label {
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  font-size: 16px;
+  color: #545F7D;
+  opacity: 0.6;
+}
