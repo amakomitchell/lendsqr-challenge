@@ -1,0 +1,35 @@
+
+.product-toggle-container {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.product-toggle-on {
+  width: 30.41px;
+  height: 28px;
+  color: #00E769;
+  cursor: pointer;
+}
+
+.product-toggle-off {
+  width: 30.41px;
+  height: 28px;
+  color: #39CDCC;
+  cursor: pointer;
+}
+
+.product-toggle-label {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 14px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #545F7D;
+  opacity: 0.6;
+  margin-right: 10px;
+}

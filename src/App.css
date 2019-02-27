@@ -11,6 +11,12 @@
 }
 
 .right-content {
-  margin-left: 240px;
+  position: absolute;
+  left: 240px;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: #F4F6F9;
+  padding: 22px 50px 22px 50px;
 }
 
