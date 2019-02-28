@@ -104,3 +104,4 @@ export const loanData = [{
   tenor: '12 months',
   status: 0,
 }];
+

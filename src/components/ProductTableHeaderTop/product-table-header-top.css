@@ -1,0 +1,25 @@
+
+
+.headerTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.header-top-item-icon {
+  height: 16px;
+  width: 16px;
+  color: #39CDCC;
+  margin-right: 5px;
+}
+
+.header-top-item-label {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #39CDCC;
+}

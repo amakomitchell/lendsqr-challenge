@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import NotificationIcon from '../NotificationIcon';
 import Button from '../Button';
 import ProductListItem from '../ProductListItem';
+import ProductTableHeaderTop from '../ProductTableHeaderTop';
 
 import { loanData } from '../../lib/constants';
 
@@ -52,10 +53,10 @@ export default class Product extends Component {
         <div className="products-table">
           <div className="products-table-header">
             <div className="products-table-header-top">
-              <p>Search</p>
-              <p>Sort</p>
-              <p>Filter</p>
-              <p>Export</p>
+              <ProductTableHeaderTop iconName="Search" />
+              <ProductTableHeaderTop iconName="Sort" />
+              <ProductTableHeaderTop iconName="Filter" />
+              <ProductTableHeaderTop iconName="Export" />
             </div>
             <div className="products-table-header-bottom">
               <h5 className="products-table-header-title">Name</h5>
@@ -67,6 +68,7 @@ export default class Product extends Component {
           {
             products.map((product) => (
               <ProductListItem
+                key={product.id}
                 product={product}
               />
             ))
