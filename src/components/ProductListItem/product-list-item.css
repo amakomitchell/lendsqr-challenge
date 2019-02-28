@@ -6,6 +6,7 @@
   height: 80px;
   background: #FFFFFF;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.0599808);
+  cursor: pointer;
 }
 
 .products-table-data-container {

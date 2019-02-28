@@ -4,6 +4,7 @@ import NotificationIcon from '../NotificationIcon';
 import Button from '../Button';
 import ProductListItem from '../ProductListItem';
 import ProductTableHeaderTop from '../ProductTableHeaderTop';
+import ProductDetailsModal from '../ProductDetails';
 
 import { loanData } from '../../lib/constants';
 
@@ -15,6 +16,8 @@ export default class Product extends Component {
     super(props);
     this.state = {
       products: [],
+      productDetailsModalOpen: false,
+      selectedProduct: null,
     };
   }
 
@@ -36,8 +39,25 @@ export default class Product extends Component {
     }
   }
 
+  openModal = (product) => {
+    this.setState({
+      productDetailsModalOpen: true,
+      selectedProduct: product,
+    });
+  };
+
+  closeProductDetailsModal = () => {
+    this.setState({
+      productDetailsModalOpen: false,
+    });
+  };
+
   render() {
-    const { products } = this.state;
+    const {
+      products,
+      selectedProduct,
+      productDetailsModalOpen,
+    } = this.state;
     return(
       <div className="products-containter">
         <NotificationIcon />
@@ -70,10 +90,22 @@ export default class Product extends Component {
               <ProductListItem
                 key={product.id}
                 product={product}
+                onClick={this.openModal}
               />
             ))
           }
         </div>
+        {
+          productDetailsModalOpen
+          ? 
+          <ProductDetailsModal
+            isOpen={productDetailsModalOpen}
+            closeModal={this.closeProductDetailsModal}
+            product={selectedProduct}
+          />
+          :
+          null
+        }
       </div>
     )
   }

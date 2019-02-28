@@ -5,8 +5,8 @@ import Toggle from '../Toggle';
 
 import './product-list-item.css';
 
-const ProductListItem = ({ product }) => (
-  <div className="products-table-data-row">
+const ProductListItem = ({ product, onClick }) => (
+  <div onClick={() => onClick(product)} className="products-table-data-row">
     <div className="products-table-data-container">
       <p className="products-table-data">
         {product.name}
@@ -36,6 +36,7 @@ const ProductListItem = ({ product }) => (
 
 ProductListItem.propTypes = {
   product: PropTypes.object.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default ProductListItem;

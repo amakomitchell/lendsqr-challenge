@@ -76,7 +76,7 @@ export const sideMenuItems = [
     label: 'Settings',
     icon: settings,
     link: '/settings'
-  }
+  },
 ];
 
 export const loanData = [{
