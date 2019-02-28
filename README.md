@@ -66,3 +66,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Dashboard for Product 
+This is a React project that is centered on dashboard for product details 
+
+### Steps
+I used React and CSS to carry out this project with the assistance from the Figma Design file. 
+I created different components
